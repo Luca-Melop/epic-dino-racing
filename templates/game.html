@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Racing Game</title>
+      <link rel="icon" type="image/png" href="/static/assets/favicon.webp">
+      <link rel="stylesheet" href="/static/game.css" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+         rel="stylesheet"
+      />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+      <script src="/static/game.js"></script>
+   </head>
+   <body> <!--load music-->
+      <audio id="mudSound" src="/static/assets/mud.mp3" preload="auto"></audio>
+      <audio id="deathSound" src="/static/assets/death2.mp3" preload="auto"></audio>
+      <audio id="clickSound" src="/static/assets/click.mp3" preload="auto"></audio>
+      <audio id="runningSound" src="/static/assets/running.mp3" preload="auto" loop></audio>
+
+      <audio id="backgroundMusic" loop>
+         <source src="/static/assets/game.mp3" type="audio/mp3">
+         Your browser does not support audio. Grrrr
+     </audio>
+
+
+
+      <div id="selection">
+         <h1 style="font-size: 2.7em;">Epic Dino Racing</h1>
+         <form onsubmit="joinShowContent(); return false;" id="joinForm">
+         <input id="playerName" type="text" placeholder="Enter your name" required maxlength="20"/>
+         <select id="playerColor">
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+         </select>
+         <br>
+         <button id="joinGameButton" class="button" type="submit" onclick="playMusic()"> Join Game</button>
+      </form>
+      </div>
+
+
+
+      <div id="mainContent">
+         <h2>Epic Dino Racing</h2>
+        <!-- <h3>by Project Curry</h3> -->
+         <input type="hidden" id="room_id" value="{{ room_id }}" />
+         <button id="startGameButton" class="button" style="display: none">Start Game</button>
+         <div id="gameArea"></div>
+         <!-- Game area where dinos will be displayed -->
+
+         <div id="gameOverOverlay" style="display: none">
+            <div id="gameOverContent">
+               <h2>Game Over!</h2>
+               <p id="gameOverMessage">Time survived: 0 seconds.</p>
+               <a href="/">Go Home</a>
+            </div>
+         </div>
+      </div>
+
+      <div id="gameInProgressMessage" style="display: none; color: red; font-size: 1.5em; text-align: center; padding: 20px; z-index: 2; position: relative;">
+         <p>Game has already started.</p>
+         <a href="/"><button class="button">Go Home</button></a>
+     </div>
+   </body>
+</html>

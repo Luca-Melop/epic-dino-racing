@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project Curry</title>
+    <link rel="icon" type="image/png" href="/static/assets/favicon.webp">
+    <link rel="stylesheet" href="/static/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="/static/home.js"></script>
+</head>
+
+<body>
+    <audio id="clickSound" src="/static/assets/click.mp3" preload="auto"></audio>
+    <div id="playMusicContainer">
+        <h1>Epic Dino Racing</h1>
+        <button class="button" id="playMusicButton" onclick="playMusicAndShowContent()">Jetzt spielen!</button>
+    </div>
+
+    <div id="mainContent" style="display: none;">
+
+
+        <h1>Epic Dino Racing</h1>
+        <form action="/create_room" method="post">
+            <button class="button" type="submit">Create Room</button>
+        </form>
+        <audio id="backgroundMusic" loop>
+            <source src="/static/assets/lobby.mp3" type="audio/mp3">
+            Your browser does not support audio.
+        </audio>
+
+        <h2 id="highscores">Highscores</h2>
+        <ul id="top-scores-list"></ul>
+
+
+
+        </div>
+        <footer>
+            © 2024 Project Curry. All rights reserved.
+        </footer>
+</body>
+</html>
