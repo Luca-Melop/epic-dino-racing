@@ -20,8 +20,8 @@ pip install Flask Flask-SocketIO Flask-SQLAlchemy eventlet
 - **Real-Time Multiplayer Gameplay**: Players can join and play in a shared game environment that updates in real time.
 - **Dynamic Obstacle Generation**: The game features a variety of obstacles that appear dynamically on the game field, making each game session unique.
 - **High Score Tracking**: Scores are tracked and stored using a SQLite database, allowing players to view and compete for top scores.
-- **Cheat Prevention**: The game includes mechanisms to prevent cheating and ensure fair play among participants.
-- **Game Room Management**: Players can create private rooms or join existing ones, and game creators can manage game sessions.
+- **Cheat Prevention**: The game includes mechanisms to prevent cheating and ensure fair play among participants (hash validation, server validation).
+- **Game Room Management**: Players can create rooms or join existing ones, and game creators can manage game sessions.
 - **Audio Feedback**: The game provides audio feedback for various events such as jumping, collision, and scoring.
 
 ## Getting Started
@@ -44,6 +44,8 @@ Follow these instructions to set up the game on your local machine for developme
    ```bash
    python app.py
    ```
+5. **Play!**:
+   open localhost:5000 on your local machine or through <ip>:5000
 
 ## Screenshots
 
@@ -61,7 +63,7 @@ Experience the thrill of dodging and navigating through multiple obstacles.
 
 ## Contributing
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions you make are **greatly appreciated** ;)
 
 ## License
 
