@@ -30,11 +30,11 @@ Follow these instructions to set up the game on your local machine for developme
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Luca-Melop/epic-dino-racing.git
    ```
 2. **Navigate to the Project Directory**:
    ```bash
-   cd <project-directory>
+   cd epic-dino-racing
    ```
 3. **Install Dependencies**:
    ```bash
@@ -51,13 +51,13 @@ Follow these instructions to set up the game on your local machine for developme
 
 Here you can choose to join a public room or create a private game session.
 
-![Game Lobby](path/to/lobby_screenshot.png)
+![Game Lobby](lobby.png)
 
 ### In-Game Experience
 
 Experience the thrill of dodging and navigating through multiple obstacles.
 
-![Gameplay](path/to/gameplay_screenshot.png)
+![Gameplay](game.png)
 
 ## Contributing
 
@@ -65,5 +65,4 @@ Contributions are what make the open-source community such an amazing place to l
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-```
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
