@@ -1,0 +1,4 @@
+Flask
+Flask-SocketIO
+Flask-SQLAlchemy
+eventlet
