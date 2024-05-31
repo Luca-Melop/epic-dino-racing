@@ -13,7 +13,7 @@ Before running the game, you must install several Python libraries:
 
 ```bash
 pip install Flask Flask-SocketIO Flask-SQLAlchemy eventlet
-
+```
 
 ## Features
 
