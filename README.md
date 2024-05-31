@@ -24,6 +24,7 @@ pip install Flask Flask-SocketIO Flask-SQLAlchemy eventlet
 - **Game Room Management**: Players can create rooms or join existing ones, and game creators can manage game sessions.
 - **Audio Feedback**: The game provides audio feedback for various events such as jumping, collision, and scoring.
 
+**Information:** The game was mainly crated as a POC. That's why the game is programmed from scratch without any game libraries which made the job much harder.
 ## Getting Started
 
 Follow these instructions to set up the game on your local machine for development and testing purposes.
