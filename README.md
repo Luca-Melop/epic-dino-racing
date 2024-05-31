@@ -46,7 +46,8 @@ Follow these instructions to set up the game on your local machine for developme
    python app.py
    ```
 5. **Play!**:
-   open localhost:5000 on your local machine or through <ip>:5000
+   - open localhost:5000 on your local machine or through [ip]:5000
+   - share your personal room link with your friends and have fun together (in the same network just share [your-ip]:[port}, otherwise use port-forwarding or similar)
 
 ## Screenshots
 
