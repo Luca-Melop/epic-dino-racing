@@ -1,7 +1,7 @@
 
 # Multiplayer Dinosaur Game
 
-Welcome to the Multiplayer Dinosaur Game, a dynamic real-time multiplayer game built with Flask and SocketIO. This game allows players to control dinosaurs navigating through a landscape teeming with obstacles, competing to survive as long as possible.
+Welcome to the Multiplayer Dinosaur Game, a dynamic real-time multiplayer game built with Flask and SocketIO. This game allows players to control dinosaurs navigating through a landscape teeming with obstacles, competing to survive as long as possible. (~1500 lines of code)
 
 ## Prerequisites
 
